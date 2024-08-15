@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lagos State Polytechnic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    /* Global Styles */
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+
+    /* Header Styles */
+    header {
+      background-color: #1e88e5;
+      color: #fff;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .logo h1 {
+      margin: 0;
+      font-size: 32px;
+      font-weight: 700;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    nav li {
+      margin-left: 30px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 600;
+      transition: color 0.3s ease;
+      position: relative;
+    }
+
+    nav a:hover {
+      color: #e3f2fd;
+    }
+
+    nav a::after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 2px;
+      background-color: #fff;
+      bottom: -5px;
+      left: 0;
+      transition: width 0.3s ease;
+    }
+
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    /* Main Content Styles */
+    main {
+      padding: 40px;
+    }
+
+    .section {
+      margin-bottom: 60px;
+    }
+
+    .section h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      font-weight: 700;
+      position: relative;
+    }
+
+    .section h2::after {
+      content: "";
+      position: absolute;
+      width: 50px;
+      height: 4px;
+      background-color: #00bbc9;
+      bottom: -10px;
+      left: 0;
+    }
+
+    .section p {
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 30px;
+      color: #555;
+    }
+
+    .image-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .image-wrapper {
+      flex: 1 1 250px;
+      text-align: center;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .image-wrapper:hover {
+      transform: translateY(-10px);
+    }
+
+    .image-wrapper img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .image-wrapper h3 {
+      margin-top: 15px;
+      font-size: 20px;
+      font-weight: 600;
+      color: #333;
+    }
+
+    /* Footer Styles */
+    footer {
+      background-color: #1e88e5;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 16px;
+    }
+
+    .social-links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .social-links a {
+      color: #fff;
+      font-size: 24px;
+      margin: 0 10px;
+      transition: color 0.3s ease;
+    }
+
+    .social-links a:hover {
+      color: #e3f2fd;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .logo {
+        margin-bottom: 10px;
+      }
+
+      .logo img {
+        width: 40px;
+        height: 40px;
+      }
+
+      nav li {
+        margin-left: 0;
+        margin-right: 20px;
+      }
+
+      .section h2 {
+        font-size: 28px;
+      }
+
+      .section p {
+        font-size: 16px;
+      }
+
+      .image-wrapper {
+        flex: 1 1 200px;
+      }
+
+      footer {
+        flex-direction: column;
+        gap: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="laspologo.jpg" alt="Logo">
+      <h1>Lagos State Polytechnic</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Programs</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section">
+      <h2>Mission and Vision</h2>
+      <p>The Lagos State Polytechnic is dedicated to providing quality education and fostering the development of skilled professionals who contribute to the growth and progress of the state and the nation. Our mission is to equip students with the knowledge, practical expertise, and leadership capabilities necessary to thrive in their chosen fields and drive positive change in their communities.</p>
+      <p>Our vision is to be a leading center of excellence in technical and vocational education, recognized for its innovative curriculum, world-class facilities, and dedicated faculty who are committed to the holistic development of our students.</p>
+    </section>
+
+    <section class="section">
+      <h2>Key Personnel</h2>
+      <div class="image-container">
+        <div class="image-wrapper">
+          <img src="rector.jpeg" alt="Rector">
+          <h3>Rector</h3>
+          <p>Dr. Oluremi</p>
+        </div>
+        <div class="image-wrapper">
+          <img src="lecturer5.png" alt="Head of Department">
+          <h3>Head of Department</h3>
+          <p>Mr. Agwatu</p>
+        </div>
+        <div class="image-wrapper">
+          <img src="gallery1.jpeg" alt="Coordinator">
+          <h3>Coordinator</h3>
+          <p>Mrs. Odumade</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023/2024 Lagos State Polytechnic. All rights reserved.</p>
+    <p>David Aliu Felix, OTM, matric :2106061130</p>
+    <div class="social-links">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+  </footer>
+</body>
+</html>
